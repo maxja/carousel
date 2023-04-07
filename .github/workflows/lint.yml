@@ -1,7 +1,6 @@
 name: lint-go-files
 run-name: Linting
-on:
-  - push
+on: [push]
 jobs:
   go-fmt:
     runs-on: ubuntu-22.04
