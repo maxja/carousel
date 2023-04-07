@@ -13,9 +13,9 @@ Concept
 ### How it supposed to work
 
 ```mermaid
-flowchart TB
+flowchart LR
   subgraph env ["Orchestrated Environment"]
-    direction TB
+    direction LR
     dm["Service requester"]
     ca["Carousel"]
     dm -- "Request for certain <br /> service configuration" --> ca
@@ -28,6 +28,7 @@ flowchart TB
       i1["Service A instance No 1"]
       i2["Service A instance No 2"]
       in["Service A instance No N"]
+      i1 -.- i2 -.- in
     end
   end
 
